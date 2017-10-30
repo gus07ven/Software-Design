@@ -2,7 +2,7 @@ import org.apache.commons.cli.*;
 
 public class MyList {
 
-    public int binSearch(Comparable[] array, Comparable value) {
+    public <T extends Comparable<T>> int binSearch(T[] array, T value) {
 
         // Source: majority of algorithm comes from Starting out with Java from Control Structures
         // to Data Structures by Tony Gaddis and Godfrey Muganda. I added some code to adapt it to my need.
